@@ -1,12 +1,26 @@
-- 👋 Hi, I’m @HarshalErande0210
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+class Animal {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
 
-<!---
-HarshalErande0210/HarshalErande0210 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+class Mammal extends Animal {
+    void walk() {
+        System.out.println("Walking...");
+    }
+}
+
+class Dog extends Mammal {
+    void bark() {
+        System.out.println("Barking...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.eat();
+        dog.walk();
+        dog.bark();
+    }
+}
